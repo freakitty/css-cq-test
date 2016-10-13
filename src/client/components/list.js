@@ -14,7 +14,8 @@ const List = ({ data }) => (
         <ListItem
           key={ idx }
           name={ item[0] }
-          value={ item[1] } />,
+          value={ item[1] }
+          idx = { idx } />,
         sortR(data))
     }
     </ul>
