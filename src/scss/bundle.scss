@@ -1,3 +1,80 @@
 body {
-    background-color: black;
+    background-color: #fff;
+    overflow-x: hidden;
+    font-family: sans-serif;
 }
+
+form {
+    position: absolute;
+    display: flex;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5px;
+    align-content: space-around;
+}
+
+.box {
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+    color: #545256;
+    margin: 5px;
+
+}
+#income {
+    background-color: #F3F2F5;
+    border-radius: 15px;
+
+}
+.income{
+    background-color: #F3F2F5;
+    color: #545256;
+}
+
+@media screen and (max-width: 500px){
+    form{display: block; top: 20px;}
+    
+}
+#outcome {
+    background-color: #F3F2F5;
+    border-radius: 15px;
+}
+
+.outcome {
+    background-color: #9f203e;
+    color: #fff;
+}
+
+p {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);   
+    font-size: 1.2em;  
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    p {margin: 10px;}
+    ul {width: 300px;}
+    ul li {height: 30px;}
+}
+ul {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul li {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #F3F2F5;
+    list-style: none;
+}
+
+ul li .value {
+    float: right;
+}
+
