@@ -3,12 +3,12 @@ import React from 'react'
 import { prop } from 'ramda'
 
 const Checkbox = ({ onCheck, status, name}) => (
-  <div>
-    <span><input
+  <div className="box" id={name}>
+    <input
       defaultChecked={ prop(name, status) }
       onChange={ () => onCheck(name) }
-      type="checkbox"/></span>
-    <span>{ name }</span>
+      type="checkbox"/>
+    <label>{ name }</label>
   </div>
 )
 
@@ -19,3 +19,6 @@ Checkbox.propTypes = {
 }
 
 export default Checkbox
+
+    
+    
